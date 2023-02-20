@@ -28,10 +28,10 @@ const useAlan = () => {
             dispatch(selectGenreOrCategory(category));
           }
         } else if (command === 'changeMode') {
-          if (mode === 'light') {
-            setMode('light');
-          } else {
+          if (mode === 'dark') {
             setMode('dark');
+          } else {
+            setMode('light');
           }
         } else if (command === 'login') {
           fetchToken();
